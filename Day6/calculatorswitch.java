@@ -61,7 +61,9 @@ public class calculatorswitch {
                     System.out.println("Exiting the calculator. Goodbye!");
                     break;
                 default:
+
                     System.out.println("Invalid choice. Please enter a number from 1 to 5.");
+                    choice=5;
             }
         } while (choice != 5);
 
