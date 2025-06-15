@@ -11,5 +11,7 @@ public class GarbageCollectionExplicit {
 
         GarbageCollectionExplicit obj = new GarbageCollectionExplicit();
         obj.test();
+        obj=null;
+        System.gc();
     }
 }
