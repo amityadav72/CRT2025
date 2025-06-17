@@ -14,6 +14,8 @@ public class Hotel2 {
         this.isAvailable = false;
     }
 
+
+
     public void setHotelDetails(String hotelName, String hotelLocation, int rooms) {
         this.name = hotelName;
         this.location = hotelLocation;
