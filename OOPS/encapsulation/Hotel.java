@@ -1,6 +1,6 @@
-package CRT2025.OOPS.inheritance;
+package CRT2025.OOPS.encapsulation;
 
-public class Hotel1 {
+public class Hotel {
     String name;
     String location;
     int numberOfRooms;
@@ -30,15 +30,5 @@ public class Hotel1 {
         } else {
             System.out.println("No rooms available!");
         }
-    }
-
-    public static void main(String[] args) {
-        Hotel1 h = new Hotel1();
-        h.setHotelDetails("Taj", "Delhi", 2);
-        h.displayDetails();
-        h.bookRoom();
-        h.bookRoom();
-        h.bookRoom();
-        h.displayDetails();
     }
 }
