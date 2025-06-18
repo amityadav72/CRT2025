@@ -1,4 +1,4 @@
-package CRT2025.OOPS.inheritance;
+package CRT2025.OOPS.inheritance.SingleInritence;
 
 public class VehicleDemo {
     public static void main(String[] args) {

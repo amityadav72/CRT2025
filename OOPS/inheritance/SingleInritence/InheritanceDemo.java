@@ -1,4 +1,4 @@
-package CRT2025.OOPS.inheritance;
+package CRT2025.OOPS.inheritance.SingleInritence;
 
 // Main class to test inheritance
 public class InheritanceDemo {
