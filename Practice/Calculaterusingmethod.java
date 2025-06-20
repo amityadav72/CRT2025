@@ -1,8 +1,8 @@
-package CRT2025.Loop;
+package CRT2025.Practice;
 
 import java.util.Scanner;
 
-public class calculatorswitch {
+public class Calculaterusingmethod {
 
     public double add(double a, double b) {
         return a + b;
@@ -25,16 +25,16 @@ public class calculatorswitch {
     }
 
     public static void main(String[] args) {
-        calculatorswitch obj = new calculatorswitch();
+        Calculaterusingmethod obj = new Calculaterusingmethod();
         Scanner sc = new Scanner(System.in);
         int choice;
 
-        System.out.println("Enter two numbers:");
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-
         do {
+            System.out.println("\nEnter the first number:");
+            double a = sc.nextDouble();
 
+            System.out.println("Enter the second number:");
+            double b = sc.nextDouble();
 
             System.out.println("Enter the choice:");
             System.out.println("1 for Addition");
@@ -42,7 +42,7 @@ public class calculatorswitch {
             System.out.println("3 for Multiplication");
             System.out.println("4 for Division");
             System.out.println("5 to Exit");
-            choice = sc.nextInt();
+            choice = sc.nextInt(); // ✅ Get user choice
 
             switch (choice) {
                 case 1:
@@ -58,12 +58,10 @@ public class calculatorswitch {
                     System.out.println("Division: " + obj.div(a, b));
                     break;
                 case 5:
-                    System.out.println("Exiting the calculator. Goodbye!");
+                    System.out.println("Exiting the calculator");
                     break;
                 default:
-
                     System.out.println("Invalid choice. Please enter a number from 1 to 5.");
-                    choice=5;
             }
         } while (choice != 5);
 
