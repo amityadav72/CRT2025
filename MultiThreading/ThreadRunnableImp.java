@@ -9,7 +9,7 @@ public class ThreadRunnableImp {
 
         Thread t3 = new Thread(t1);
         Thread t4 = new Thread(t2);
-
+// Amit
 
         t3.start();
         t4.start();
