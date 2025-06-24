@@ -20,8 +20,8 @@ class Employee {
 public class EmpList {
     public static void main(String[] args) {
 
-        // Creating the ArrayList of Employees
-        List<Employee> employeeList = new ArrayList<>();
+
+        List<Employee> employeeList = new ArrayList<>(); // < > this is generic
 
         employeeList.add(new Employee(101, "Amit"));
         employeeList.add(new Employee(102, "Ravi"));
@@ -29,7 +29,7 @@ public class EmpList {
         employeeList.add(new Employee(104, "John"));
         employeeList.add(new Employee(105, "Ravi"));
 
-        // Count how many names are duplicated (unique duplicate names)
+
         Map<String, Integer> nameCountMap = new HashMap<>();
         for (Employee emp : employeeList) {
             nameCountMap.put(emp.empName, nameCountMap.getOrDefault(emp.empName, 0) + 1);
@@ -44,7 +44,7 @@ public class EmpList {
 
         System.out.println("Number of duplicate employee names: " + duplicateNameCount);
 
-        // Optional: Count how many employees have duplicate names
+
         int employeesWithDuplicateNames = 0;
         for (Employee emp : employeeList) {
             if (nameCountMap.get(emp.empName) > 1) {
@@ -54,12 +54,11 @@ public class EmpList {
 
         System.out.println("Total employees having duplicate names: " + employeesWithDuplicateNames);
 
-        // Remove the first employee from the list
         if (!employeeList.isEmpty()) {
             employeeList.remove(0);
         }
 
-        // Print the list after removal
+
         System.out.println("\nEmployee List after removing the first employee:");
         for (Employee emp : employeeList) {
             System.out.println(emp);
