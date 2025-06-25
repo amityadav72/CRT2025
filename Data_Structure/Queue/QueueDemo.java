@@ -20,6 +20,7 @@ public class QueueDemo {
 
         System.out.println("Elements are " +queueobj);
         System.out.println("Peek elements :: " + queueobj.peek());
+        System.out.println("Poll elements :: " + queueobj.poll());
 
 
     }
